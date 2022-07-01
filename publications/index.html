@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Sampada Deglurkar | Publications</title>
-  <meta name="description" content="This is the personal website of Otilia Stretcu">
+  <meta name="description" content="This is the personal website of Sampada Deglurkar">
 
   <!-- Fonts and Icons -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
@@ -106,24 +106,13 @@
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
     
-    <div id="stretcu2021c2f" class="col p-0">
-      <h5 class="title mb-0">Coarse-to-Fine Curriculum Learning.</h5>
+    <div id="visionpomdp" class="col p-0">
+      <h5 class="title mb-0">Visual Learning-Based Planning for Continuous High-Dimensional POMDPs.</h5>
       <div class="author">
         
           
             
-              
-                <nobr><em>Otilia Stretcu</em>,</nobr>
-              
-            
-          
-        
-          
-            
-              
-                
-                  <nobr><a href="http://platanios.org/" target="_blank">Emmanouil Antonios Platanios</a>,</nobr>
-                
+                <nobr><em>Sampada Deglurkar<nobr><em>*</em></nobr></em>,</nobr>
               
             
           
@@ -131,19 +120,27 @@
           
             
               
+                  <!-- <nobr><a href="http://www.cs.cmu.edu/~mktoneva/" target="_blank">Michael H. Lim<nobr><em>*</em></nobr></a>,</nobr> -->
+                 <nobr>Michael Lim<nobr><em>*</em></nobr>,</nobr>
                 
-                  <nobr><a href="http://www.cs.cmu.edu/~tom/" target="_blank">Tom Mitchell</a>,</nobr>
-                
-              
+    
             
-          
+                 <nobr>Johnathan Tucker<nobr><em>*</em></nobr>,</nobr>
+        
+        
+                 <nobr>Zachary N. Sunberg<nobr><em>*</em></nobr>,</nobr>
+        
+        
+        
+                 <nobr>Aleksandra Faust<nobr><em>*</em></nobr>,</nobr>
         
           
             
               and
               
                 
-                  <nobr><a href="http://www.cs.cmu.edu/~bapoczos/" target="_blank">Barnabás Póczos</a>.</nobr>
+                  <!-- <nobr><a href="http://www.cs.cmu.edu/~bapoczos/" target="_blank">Barnabás Póczos</a>.</nobr> -->
+                  <nobr>Claire J. Tomlin<nobr><em>*</em></nobr>,</nobr>
                 
               
             
@@ -164,7 +161,7 @@
     
       <div class="col p-0">
         
-          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#stretcu2021c2f-abstract" role="button" aria-expanded="false" aria-controls="stretcu2021c2f-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#visionpomdp-abstract" role="button" aria-expanded="false" aria-controls="visionpomdp-abstract">Abstract</a>
         
         
         
@@ -174,7 +171,7 @@
         
         
         
-          <a class="badge grey waves-effect font-weight-light mr-1" href="http://arxiv.org/abs/2106.04072" target="_blank">arXiv</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" href="https://arxiv.org/abs/2112.09456" target="_blank">arXiv</a>
         
         
         
@@ -182,9 +179,17 @@
     
       
       <div class="col mt-2 p-0">
-        <div id="stretcu2021c2f-abstract" class="collapse">
+        <div id="visionpomdp-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-            When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly.Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals that are used to pre-train a model before tackling the target task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and then use this acquired knowledge when learning to classify among more fine-grained classes such as cat, dog, car, and truck. Most existing curriculum learning algorithms for supervised learning consist of scheduling the order in which the training examples are presented to the model. In contrast, our approach focuses on the output space of the model. We evaluate our method on several established datasets and show significant performance gains especially on classification problems with many labels. We also evaluate on a new synthetic dataset which allows us to study multiple aspects of our method.
+             The Partially Observable Markov Decision Process (POMDP) is a powerful framework for capturing decision-making problems that 
+            involve state and transition uncertainty. However, most current POMDP planners cannot effectively handle very high-dimensional 
+            observations they often encounter in the real world (e.g. image observations in robotic domains). In this work, we propose Visual 
+            Tree Search (VTS), a learning and planning procedure that combines generative models learned offline with online model-based POMDP 
+            planning. VTS bridges offline model training and online planning by utilizing a set of deep generative observation models to predict 
+            and evaluate the likelihood of image observations in a Monte Carlo tree search planner. We show that VTS is robust to different 
+            observation noises and, since it utilizes online, model-based planning, can adapt to different reward structures without the need 
+            to re-train. This new approach outperforms a baseline state-of-the-art on-policy planning algorithm while using significantly less 
+            offline training time.
           </div>
         </div>
       </div>
@@ -1779,11 +1784,11 @@
   </div>
 
   <!-- Footer -->
-  <footer>
+  <!-- <footer>
     &copy; Copyright 2021 Otilia Stretcu.
     
     
-  </footer>
+  </footer> -->
 
   <!-- Core JavaScript Files -->
   <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
